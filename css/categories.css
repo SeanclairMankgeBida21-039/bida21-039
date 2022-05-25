@@ -1,0 +1,85 @@
+.actionTitle h1{
+    color: aliceblue;
+    margin-top: 20rem;
+    font-size: 30px;
+}
+.actionCategorie{
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 5rem;
+}
+
+.moviePic{
+   
+    margin-bottom: 1rem;
+   margin-left: 2rem;
+    width: 12rem;
+    height: 17rem;
+    background-image: url(/Images/classic-movie-film-poster-captain-marvel-dutch-version-2019-movie-carol-danvers-action-sci-fi-2EXMKE4.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all ease 0.5s; 
+    border-radius: 1rem;
+
+}
+.categorie{
+    margin-left: 2rem;
+    color: rgb(214, 219, 166);
+    font-size: 15px;
+}
+.movieName{
+    margin-left: 2rem;
+    font-size: 12px;
+}
+.movieDescription{
+    width: 40rem;
+    margin-left: 2rem;
+    
+}
+
+
+
+.ViewTimes{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: rgba(214, 219, 166, 0.7);
+    border-radius: 1rem;
+}
+
+.ViewTimes p{
+    height: 1.5rem;
+    width: 7rem;
+    margin-left: 1rem;
+   
+}
+
+.separator{
+    height: 2px;
+    width: 60rem;
+    background-color: rgb(126, 125, 125);
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+
+footer{
+   
+    width: 100vw;
+    
+  }
+
+.more a{
+    color: black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+
+.more{
+    background-color: rgb(214, 219, 166);
+    margin-left: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}

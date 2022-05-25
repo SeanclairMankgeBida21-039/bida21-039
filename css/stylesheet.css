@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+   
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+body{
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style-type:none ;
+    text-decoration: none;
+}
+
+/*================= Navigation Section =================*/
+nav{
+    display: flex; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 2%;
+}
+
+nav a{
+  color: white;
+}
+header h1{
+    color: rgb(214, 219, 166);
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+header h1:hover{
+  cursor: pointer;
+}
+nav li{
+    display: flex; 
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: uppercase;
+    
+}
+
+nav a:hover{
+    color:rgb(214, 219, 166) ;
+    transition: all ease 0.5s;
+    transition: ease-out 0.5s;
+    font-size: 18px;
+}
+
+header{
+    background-image: url(/Images/40451.jpg);
+    background-position: center;
+    background-size: cover;
+    height:30rem;
+    background-attachment: fixed;
+}
+
+header i{
+    height: 20px;
+    width: 30px;
+    margin-left: 2rem;
+    color: white;
+    position: absolute;
+    margin-top: 1.3rem;
+    margin-left: 14rem;  
+  }
+
+  i:hover{
+    cursor: pointer;
+    color:rgb(214, 219, 166)
+  }
+
+
+
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.flexbox {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  margin: 20px;
+}
+
+.search > h3 {
+  font-weight: normal;
+}
+
+.search > h1,
+.search > h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 1px #6b7375;
+}
+
+.search > div {
+  display: inline-block;
+  position: relative;
+  margin-left: 3rem;
+}
+
+.search > div:after {
+  content: "";
+  background: white;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  transform: rotate(135deg);
+}
+
+.search > div > input {
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: #efefef;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+  width: 250px;
+}
+
+
+/*=============== Latest Movies ===========================*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    
+}
+
+
+.lates{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lates p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 5rem;
+    margin-right: 50%;
+    margin-top: 2rem;
+
+}
+ .lates li{
+     background-color: aliceblue;
+     height: 2rem;
+     width: 5rem;
+     text-align: center;
+     margin: auto;
+     cursor: pointer;
+
+ }
+
+ 
+
+
+/* CSS  view all*/ 
+.button-81 {
+    background-color: rgb(32, 32, 32);
+    border: 0;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    color: #f8f8fa;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.5rem 0.5rem;
+    margin-left: 66.5%;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    user-select: none;
+    width: 10rem;
+    margin-left: 90%;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-81:hover {
+    background-color:rgba(214, 219, 166, 0.7);
+    color: rgb(14, 14, 14);
+    transition: all ease 0.5s;
+  }
+  
+  @media (min-width: 768px) {
+    .button-81 {
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  
+.btnV{
+    margin-top: 2rem;
+     margin-right: 2rem;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(207, 153, 52);
+    width:100px;
+    height: 25px;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    color: #f8f8fa;
+    
+}
+
+.latest{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 2rem;
+  
+  
+
+}
+
+
+.poster{
+    margin-left: 5rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 20rem;
+    height: 30rem;
+    background-image: url(/Images/classic-movie-film-poster-captain-marvel-dutch-version-2019-movie-carol-danvers-action-sci-fi-2EXMKE4.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.poster:hover{
+    opacity: 0.8;
+}
+
+.poster1{
+    margin-left: 5rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 20rem;
+    height: 30rem;
+    background-image: url(/Images/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.poster2{
+    margin-left: 5rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 20rem;
+    height: 30rem;
+    background-image: url(/Images/s-l300.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.description{
+    background-color: rgba(197, 191, 184, 0.2);
+    width: 20rem;
+    margin-left: 5rem;
+
+   
+  
+}
+
+.description p{
+    font-size: 13px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.Button1{
+  margin-top: 1rem;
+  display: flex;
+  background-color: rgb(41, 40, 40);
+  width: 100%;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button1 li{
+  color: #efefef;
+  display: block;
+  
+}
+
+.Button1:hover{
+  cursor: pointer;
+  background-color: rgba(106, 110, 76, 0.8);
+  transition: all ease 0.5s;
+ 
+}
+
+.Button1 li:hover{
+  color: black;
+}
+
+.Recommeded{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(211, 236, 234, 0.2);
+  height: auto;
+  padding-bottom: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.Recom{
+  text-transform: uppercase;
+  padding-top: 2rem;
+  margin-left: 5rem;
+  font-size: 20px;
+  color: #1f1e1e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+                                           /*=================== Movie section starts here ====================*/
+
+.mov1{
+  background-image: url(/Images/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg);
+  height: 30rem;
+  width: 40rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mov1:hover {
+  z-index: 1;
+  background-color: rgba(197, 194, 194, 0.5);
+  cursor: pointer;
+
+}
+.mov2{
+  background-image: url(/Images/john-wick-chapter-1-movies-poster-01.jpg);
+  height: 14rem;
+  width: 30rem;
+margin-top: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.mov3{
+  background-image: url(/Images/final.jpg);
+  height: 14rem;
+  width: 30rem;
+  margin-top: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.recomSide{
+  margin-left: 2rem;
+}
+
+
+                                        /*=================== Footer Icons here ====================*/
+.socialIcons{
+  display: flex;
+  flex-wrap: wrap;
+  width: 15rem;
+  padding-top: 3rem;
+  justify-content: center;
+  margin: auto;
+ 
+}
+
+.icons i{
+  color: #efefef;
+  font-size: 30px;
+  margin-left: 2rem;
+}
+
+.icons i:hover{
+  color: rgb(214, 219, 166);
+}
+
+                                        /*=================== Footer starts here ====================*/
+footer{
+  height: 15rem;
+  background-color: rgb(56, 56, 52);
+}
+.footerText h1{
+  margin-top: 1rem;
+  color: #efefef;
+  font-size: 13px;
+  margin-left: 3rem;
+}
+.footerText h2{
+  
+  color: #efefef;
+  font-size: 13px;
+  margin-left: 2rem;
+}
+
+
+                            /*============================== CATEGORIES PAGE ===========================*/
+
+.categoriesHeader{
+    background-image: url(/Images/pexels-donald-tong-66134.jpg);
+    background-position: center;
+    background-size: cover;
+    height:30rem;
+    background-attachment: fixed;
+}
+
+.categoriesContainer{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-left: 2rem;
+}
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  width: 10rem;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.moviePanelShowCase{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7rem;
+ 
+}
+
+.moviePanel{
+  margin-left: 10rem ;
+  width: 80%;
+ 
+}
+
+.Paneldescription{
+     background-color: rgba(197, 191, 184, 0.2);
+     width: 15rem;
+     margin-left: 0rem;
+    
+}
+
+.Paneldescription p{
+  font-size: 13px;
+    margin-left: 1rem;
+    cursor: pointer;
+
+}
+
+.Movieposter{
+  
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(/Images/classic-movie-film-poster-captain-marvel-dutch-version-2019-movie-carol-danvers-action-sci-fi-2EXMKE4.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+
+
+.Movieposter1{
+
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(/Images/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.Movieposter2{
+  
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 15rem;
+  height: 20rem;
+  background-image: url(/Images/s-l300.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+
+/* =========================== CONTATC =================================*/
+
+
+
+.contactHeader{
+  background-image: url(/Images/pexels-cottonbro-3945313.jpg);
+  background-position: center;
+  background-size: cover;
+  height:30rem;
+  background-attachment: fixed;
+}
+
+form { max-width:420px; margin:50px auto; 
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid rgba(214, 219, 166, 0.7);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid rgba(214, 219, 166, 0.7); }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: rgb(68, 67, 67);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:rgba(214, 219, 166); }
+
+.contactUs{
+ margin-left: 39%;
+ margin-top: 2rem;
+}
+
+                          /*========================= UPCOMING ============================*/
+.movie1{
+  background-image: url(/Images/john-wick-chapter-1-movies-poster-01.jpg);
+  height: 30rem;
+  width: 40rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.movie2{
+  background-image: url(/Images/Borat21.jpg);
+  height: 14rem;
+  width: 30rem;
+margin-top: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.movie3{
+  background-image: url(/Images/toy-story-feature-poster.jpg);
+  height: 14rem;
+  width: 30rem;
+  margin-top: 2rem;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all smooth 1s;
+
+}
+
+.movie3::after{
+  content: "Toy Story";
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10rem;
+ 
+}
+
+.movie3:hover{
+  cursor: pointer;
+  height: 14.1rem;
+  width: 30.1rem;
+}
+
+                                            /*=================== MOVIES =========================*/
+
+.Showing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.Showing h1{
+  margin-left: 40%;
+}
+
+.seperator2{
+  margin-left: 44%;
+  height: 3px;
+  width: 9rem;
+  background-color: #0d172a;
+}
+
+.fa-video{
+  color: #837e7e;
+  font-size: 15px;
+}
+
+.fa-clock{
+  color: #837e7e;
+  font-size: 15px;
+}
